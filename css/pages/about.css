@@ -114,7 +114,7 @@ main{
 	bottom: -295px;
 	opacity: 0;
 	background-color: var(--darkgreen);
-	padding: 25px 10px 35px;
+	padding: 15px 10px 45px;
 	min-width: 300px;
 	display: flex;
 	flex-direction: column;
