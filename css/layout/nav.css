@@ -1,0 +1,126 @@
+nav{
+	position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+	padding: 50px 0;
+	background-color: var(--midgreen);
+}
+
+
+.navcontainer{
+	display: grid;
+    grid-template-columns: auto auto;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.uil-bars{
+	cursor: pointer;
+	color: var(--white);
+	font-size: 30px;
+}
+
+#navbar-responsive {
+    display: block;
+    position: fixed;
+	right: -100%;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 70%;
+	text-align: center;
+	background-color:  var(--police);
+}
+
+
+.uil-multiply{
+	cursor: pointer;
+	padding: 50px 30px;
+	color: var(--white);
+	font-size: 30px;
+	position: absolute;
+    right: 0px;
+}
+
+.hamcontent{
+	padding: 100px 0 25px 48px;
+	display: flex;
+	gap: 24px;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.hamcontent a{
+	margin: 10px;
+	color: var(--white);
+	font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.navlinks a:hover{
+	color: var(--coral);
+}
+
+.navlogo{
+	display: flex;
+	gap: 80px;
+	align-items: center;
+}
+
+
+.navlinks{
+	display: none;
+	gap: 40px;
+}
+
+
+.nav-button{
+	display: none;
+}
+
+.navlinks a, .nav-button a{
+	color: var(--white);
+	font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+
+.navbarshrink{
+	padding: 20px 0px;
+	box-shadow: 1px 5px 15px var(--sacramento);
+}
+
+
+#navbar-responsive img{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100px;
+	height: 200px;
+}
+
+
+
+
+
+@media(min-width:600px){
+	.navbutton{
+		display: block;
+	}
+	.hamburger{
+		display: none;
+	}
+	#navbar-responsive{
+		display: none;
+	}
+	.navlinks{
+		display: flex;
+	}
+	.nav-button{
+		display: block;
+	}
+}

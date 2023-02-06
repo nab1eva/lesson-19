@@ -1,0 +1,281 @@
+@import url(../global.css);
+
+
+
+header{
+	background-color: var(--midgreen);
+}
+
+.headercontainer{
+	position: relative;
+	padding-top: 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.headercontainer h1{
+	text-align: center;
+	max-width: 220px;
+}
+
+
+.headercontainer p{
+	margin: 18px auto 90px;
+	text-align: center;
+	max-width: 350px;
+}
+
+.headerright{
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+
+
+.headerright img{
+	max-width: 358px;
+}
+
+.headerright hr{
+	display: none;
+}
+
+
+.home--section1{
+	background-color: var(--sacramento);
+	background-image: url(../../images/home/main1.png);
+	background-repeat: no-repeat;
+	background-position: top right;
+	padding: 64px 0;
+}
+
+.home--section1 hr{
+	background-color: var(--coral);
+}
+
+.home--section1--container{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.home--section1--container h2{
+	margin: 32px 0 60px;
+	max-width: 240px;
+}
+
+.home--section1-cards{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+}
+
+.home--section1-card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.home--section1-card img{
+	width: 72px;
+	height: 72px;
+}
+
+.home--section1-card-text h3{
+	margin: 16px auto 8px;
+}
+
+.home--section1-card-text p{
+	max-width: 450px;
+}
+.home--section1-card-text{
+	text-align: center;
+}
+
+
+.home--section2{
+	position: relative;
+	background-color: var(--deepjungle);
+	padding: 140px 0;
+	background-image: url(../../images/home/img3.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+.home--section2-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 48px;
+}
+
+.home--section2-container h2{
+	text-align: center;
+	max-width: 327px;
+}
+
+.home--section2-container h2 span{
+	color: var(--lightgreen);
+}
+
+
+.home--section2-cards{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 48px;
+}
+
+.home--section2-card{
+	background-image: url(../../images/home/qoshtirnoq.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.home--section2-card p{
+	padding-top: 25px;
+	text-align: center;
+	line-height: 25px;
+	max-width: 327px;
+}
+
+.home--section2-card h3{
+	color: var(--lightgreen);
+	margin: 16px 0 2px;
+}
+
+.home--section2-card img{
+	margin-top: 16px;
+	width: 62px;
+	height: 62px;
+}
+
+.homes2-img{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 100px;
+	width: 200px;
+}
+
+
+
+@media(min-width:500px){
+	.home--section1--container h2{
+		max-width: 350px;
+	}
+}
+
+
+
+@media(min-width:600px){
+	h1{
+		font-size: 64px;
+		line-height: 56px;
+		max-width: 350px !important;
+	}
+	p{
+		max-width: 460px !important;
+	}
+	.headercontainer{
+		padding-top: 170px;
+	}
+	.home--section1--container h2{
+		max-width: 445px;
+	}
+	.home--section1-card{
+		gap: 24px;
+		flex-direction: initial;
+	}
+	.home--section1-card-text{
+		text-align: left;
+	}
+	.home--section2-container h2 {
+		max-width: 450px;
+	}
+}
+
+@media(min-width:700px){
+	.home--section2-container h2 {
+		max-width: 600px;
+	}
+}
+
+
+
+
+@media(min-width:1000px){
+	.headercontainer{
+		flex-direction: inherit;
+		justify-content: space-between;
+		padding-top: 140px;
+		gap: 30px;
+	}
+	.headercontainer h1{
+		text-align: left;
+		padding-bottom: 210px;
+	}
+	.headercontainer p{
+		text-align: left;
+		max-width: 445px;
+	}
+	header{
+		background-image: url(../../images/home/headerimg1.png);
+		background-position: left center;
+		background-repeat: no-repeat;
+	}
+	.headerright hr{
+		position: relative;
+		right: 200px;
+		margin-bottom: 70px;
+		display: block;
+	}
+	.home--section1--container{
+		flex-direction: initial;
+		justify-content: center;
+		gap: 100px;
+	}
+	.home--section1{
+		background-position: right bottom;
+		padding: 140px 0;
+	}
+	.home--section2-cards{
+		flex-direction: initial;
+	}
+	.home--section2-container{
+		gap: 56px;
+	}
+	.home--section2-container h2 {
+		max-width: 930px;
+	}
+	.home--section2-container p {
+		max-width: 350px !important;
+	}
+	h1{
+		font-size: 100px;
+		line-height: 100px;
+		max-width: 600px !important;
+	}
+	h2{
+		font-size: 48px;
+        line-height: 48px;
+	}
+	p{
+		font-size: 18px;
+	}
+}
+
+
+

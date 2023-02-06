@@ -1,0 +1,147 @@
+@import url(../global.css);
+
+
+main{
+	position: relative;
+	z-index: 1;
+	padding: 120px 0;
+	background-color: var(--midgreen);
+	background-image: url(../../images/contact/img1.png);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+.maincontainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.maincontainer h1{
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.contactleft{
+	margin-bottom: 56px;
+}
+
+
+.leftcards{
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	margin-top: 48px;
+}
+
+h1 span{
+	font-size: 32px;
+    line-height: 48px;
+}
+
+
+.leftcard{
+	display: flex;
+	gap: 25px;
+}
+
+.leftcard img{
+	width: 72px;
+	height: 72px;
+}
+
+.leftcard p{
+	display: flex;
+	align-items: center;
+	max-width: 200px;
+}
+
+
+form{
+	display: flex;
+	flex-direction: column;
+}
+
+
+input {
+	margin-top: 10px;
+	color: var(--lightgreen);
+	padding: 16px;
+    min-width: 300px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: var(--midgreen);
+}
+
+.message{
+	padding-bottom: 58px;
+}
+
+form button{
+	width: 123px;
+    display: flex;
+	margin-top: 24px;
+	background-color: white !important;
+	color: var(--darkgreen);
+}
+
+
+
+
+@media(min-width:500px){
+	.bigh1{
+		font-size: 64px;
+        line-height: 56px;
+	}
+	.leftcard p{
+		max-width: 300px;
+	}
+	input{
+		min-width: 400px;
+	}
+}
+
+@media(min-width:600px){
+	input{
+		min-width: 500px;
+	}
+}
+
+@media(min-width:700px){
+	input{
+		min-width: 540px;
+	}
+	main{
+		background-image: url(../../images/contact/img1resp.png) !important;
+		background-position: bottom right;
+		background-repeat: no-repeat;
+	}
+}
+
+
+@media(min-width:1000px){
+	.maincontainer{
+		flex-direction: initial;
+		justify-content: space-between;
+	}
+	.maincontainer h1{
+		text-align: left;
+	}
+	.contactleft{
+		margin-top: 124px;
+	}
+}
+
+
+@media(min-width:1280px){
+	.img2{
+		display: block;
+		top: 250px;
+		position: absolute;
+		z-index: 0;
+		width: 100px;
+		height: 200px;
+	}
+}
+

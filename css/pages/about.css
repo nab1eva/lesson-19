@@ -1,0 +1,289 @@
+@import url(../global.css);
+
+
+header{
+	background-color: var(--midgreen);
+	background-image: url(../../images/about/img1.png);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+
+.headercontainer{
+	position: relative;
+	padding-top: 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.headercontainer h1{
+	text-align: center;
+	max-width: 220px;
+}
+
+
+.headercontainer p{
+	margin: 18px auto 90px;
+	text-align: center;
+	max-width: 350px;
+}
+
+.headerright{
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+
+
+.headerright img{
+	max-width: 358px;
+}
+
+.headerright hr{
+	display: none;
+}
+
+
+
+main{
+	background-color: var(--deepjungle);
+	padding: 88px 0;
+	background-image: url(../../images/about/img2.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+.maincontainer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 48px;
+}
+
+
+.maincontainer h2{
+	text-align: center;
+}
+
+.main-cards{
+	gap: 50px;
+	display: grid;
+	justify-content: center;
+}
+
+.maincard{
+	/* overflow: hidden; */
+	position: relative;
+	min-width: 300px;
+	padding: 32px 60px 56px;
+	background-color: var(--sacramento);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.maincard h3{
+	margin-top: 16px;
+	color: var(--lightgreen);
+}
+
+
+.person{
+	width: 96px;
+	height: 96px;
+}
+
+
+
+.img{
+	width: 56px;
+	height: 56px;
+	position: absolute;
+	bottom: -25px;
+}
+
+
+.hover{
+	position: absolute;
+	bottom: -295px;
+	opacity: 0;
+	background-color: var(--darkgreen);
+	padding: 25px 10px 35px;
+	min-width: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.maincard:hover .hover{
+	bottom: 0;
+	opacity: 1;
+}
+
+
+
+.hover p{
+	margin: 8px 0 24px;
+	text-align: center;
+}
+
+.sites{
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.sites img{
+	width: 24px;
+	height: 24px;
+}
+
+
+
+
+
+.aboutlast{
+	padding: 88px 0;
+	background-color: var(--sacramento);
+	background-image: url(../../images/about/img3.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+
+.aboutlastcontainer{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 50px;
+}
+
+.aboutlastcontainer h2{
+	text-align: center;
+}
+
+
+.clients{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 80px;
+	justify-content: center;
+}
+
+.clients img{
+	width: 150px;
+}
+
+.lastimg{
+	width: 90px !important;
+}
+
+
+
+
+
+
+
+@media(min-width:600px){
+	h1{
+		font-size: 64px;
+		line-height: 56px;
+		max-width: 350px !important;
+	}
+	p{
+		max-width: 460px !important;
+	}
+	.headercontainer{
+		padding-top: 170px;
+	}
+	header{
+		background-color: var(--midgreen);
+		background-image: url(../../images/about/img1resp.png);
+		background-position: bottom right;
+		background-repeat: no-repeat;
+	}
+
+}
+
+
+@media(min-width:700px){
+	.main-cards{
+		grid-template-columns: repeat(2, auto);
+	}
+	main{
+		padding: 100px 0;
+		background-image: url(../../images/about/img2resp.png);
+	}
+	.aboutlast{
+		padding: 100px 0;
+		background-image: url(../../images/about/img3resp.png);
+	}
+}
+
+
+
+@media(min-width:1000px){
+	.headercontainer{
+		flex-direction: inherit;
+		justify-content: space-between;
+		padding-top: 140px;
+	}
+	.headercontainer h1{
+		text-align: left;
+		padding-bottom: 210px;
+	}
+	.headercontainer p{
+		text-align: left;
+		max-width: 600px !important;
+		margin-right: 100px;
+	}
+	.headerright hr{
+		background-color: var(--coral);
+		margin-left: -250px;
+		position: relative;
+		right: 200px;
+		margin-bottom: 70px;
+		display: block;
+	}
+	.main-cards{
+		grid-template-columns: repeat(3, auto);
+	}
+	.maincontainer{
+		gap: 64px;
+	}
+	main{
+		padding: 140px 0;
+	}
+	.aboutlast{
+		padding: 140px 0;
+	}
+	h1{
+		font-size: 64px;
+		line-height: 100px;
+		max-width: 600px !important;
+	}
+	h2{
+		font-size: 48px;
+        line-height: 48px;
+	}
+	p{
+		font-size: 18px;
+	}
+}
+
+
+@media(min-width:1200px){
+	.headercontainer p{
+		max-width: 700px !important;
+		margin-right: 0;
+	}
+}

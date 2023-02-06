@@ -1,0 +1,34 @@
+button{
+	cursor: pointer;
+	padding: 10px 32px;
+	border: 2px solid #FFFFFF;
+    border-radius: 24px;
+	background-color: transparent;
+	font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+button a{
+	color: var(--white);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+
+button:hover{
+	background-color: var(--white);
+}
+
+button:hover a{
+	color: var(--darkgreen);
+}
+
+button:disabled{
+	color: var(--police);
+}
+
+button:disabled a{
+	color: var(--police);
+}
