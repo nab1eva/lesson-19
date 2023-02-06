@@ -64,9 +64,9 @@
 			</div>
 			<div class="contactright">
 				<form action="index.html">
-					<input type="text" placeholder="Name"  required>
-					<input type="email" placeholder="Email Address" required>
-					<input type="text" placeholder="Company Name" required>
+					<input type="text" placeholder="Name" oninvalid="this.setCustomValidity('This field is required')" required >
+					<input type="email" placeholder="Email Address" oninvalid="this.setCustomValidity('This field is required')" required>
+					<input type="text" placeholder="Company Name" oninvalid="this.setCustomValidity('This field is required')" required>
 					<input type="text" placeholder="Title">
 					<input class="message" type="text" placeholder="Message">
 					<button type="submit">submit</button>

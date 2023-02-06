@@ -78,6 +78,11 @@ input:focus{
 	color: var(--white);
 }
 
+:required{
+	color: var(--coral);
+}
+
+
 
 input:hover{
 	border-bottom: 1px solid var(--coral);
